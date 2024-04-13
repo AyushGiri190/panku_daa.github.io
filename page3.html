@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="12.jpg" height="480" width="660">
+    <h1>Ky rate doge iss randi ka </h1>
+    <select id = "paisa">
+        <option value ="150">150</option>
+        <option value ="250">250</option>
+        <option value ="350">350</option>
+    </select>
+    
+    <button onclick="price()">Kharido iss randi ko</button>
+    <p1 id="pk"></p1>
+    <script>
+        function price()
+        {
+            let value = document.getElementById("paisa").value;
+            document.getElementById("pk").innerHTML=value+" Bhencho itna paisa iss gndi chut ka";
+            window.alert("Ruk abhi hack krta hu");
+        }
+        
+    </script>
+
+
+</body>
+</html>
