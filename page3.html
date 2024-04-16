@@ -6,7 +6,8 @@
     <title>Panku daa ki maaro</title>
 </head>
 <body>
-    <img src="images/12.jpg" height="480" width="660">
+    <img id ="ima" src="images/12.jpg" height="480" width="660">
+    
     <h1>Ky rate doge iss randi ka </h1>
     <select id = "paisa">
         <option value ="150">150</option>
@@ -17,13 +18,18 @@
     <button onclick="price()">Kharido iss randi ko</button>
     <p1 id="pk"></p1>
     <script>
+        document.getELementById('ima').addEventListener("click",change);
         function price()
         {
             let value = document.getElementById("paisa").value;
             document.getElementById("pk").innerHTML=value+" Bhencho itna paisa iss gndi chut ka";
             window.alert("Ruk abhi hack krta hu");
         }
-        
+        function change()
+            {
+                 window.alert("bhg bsdk");
+
+            }
     </script>
 
 
